@@ -1,9 +1,40 @@
 <!DOCTYPE html>
+<html>
     <head>
         <title>Estructuras de control</title>
     </head>
 
     <body>
-        
+        <script type="text/javascript">
+            function numMenor() {
+                var num1 = document.operaciones.numero1.value;
+                var num2 = document.operaciones.numero2.value;
+                var num3 = document.operaciones.numero3.value;
+
+                var menor;
+
+                if (num1 <= num2 && num1 <= num3){
+                    menor = num1;
+                }else if(num2 <= num1 && num2 <= num3){
+                    menor = num2;
+                }else if(num3 <= num1 && num3 <= num2){
+                    menor = num3;
+                }
+
+                //document.write("El numero menor es: " + menor);
+                document.getElementById('numMenorTl').innerHTML = 'El numero menor es: ' + menor + '<br>';
+            }
+        </script>
+
+        <form name="operaciones">
+            <p>Problema 1. Elaborar una función a la cual le enviemos tres enteros y muestre el menor.</p>
+            <p>Numero 1: <input type="text" name="numero1"></p>
+            <p>Numero 2: <input type="text" name="numero2"></p>
+            <p>Numero 3: <input type="text" name="numero3"></p>
+            <input type="button" name="numMenorBtn" value='Calcular Menor' onclick="numMenor()">
+            <p id="numMenorTl"></p>
+
+            
+        </form>
     </body>
 </html>
