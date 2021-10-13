@@ -1,0 +1,80 @@
+body {
+    background-color: lightblue;
+}
+
+#numMenor{
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    background-color: rgb(181, 255, 174);
+    width: 30%;
+    top: 20px;
+    left: 2%;
+}
+
+#menorMayor{
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    background-color: rgb(255, 174, 174);
+    width: 30%;
+    top: 20px;
+    left: 34%;
+}
+
+#perimetro{
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    background-color: rgb(247, 255, 174);
+    width: 30%;
+    top: 20px;
+    left: 66%;
+}
+
+#numDigitos{
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    background-color: rgb(210, 142, 255);
+    width: 30%;
+    top: 350px;
+    left: 2%;
+}
+
+#promedio{
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;    
+    background-color: rgb(142, 238, 255);
+    width: 30%;
+    top: 350px;
+    left: 34%;
+}
+
+#suma5Val{
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;    
+    background-color: rgb(255, 206, 70);
+    width: 30%;
+    top: 350px;
+    left: 66%;
+}
+
+.boton{
+    border: none;
+    border-radius: 3px;
+    background: lightblue;
+    height: 28px;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
