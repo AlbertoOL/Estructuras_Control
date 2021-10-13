@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Estructuras de control</title>
+        <title>Problema 1.</title>
+        <script language="javascript" src="funciones.js"></script>
     </head>
 
-    <body>
-        <script type="text/javascript">
-            function numMenor() {
-                var num1 = document.operaciones.numero1.value;
-                var num2 = document.operaciones.numero2.value;
-                var num3 = document.operaciones.numero3.value;
-
-                var menor;
-
-                if (num1 <= num2 && num1 <= num3){
-                    menor = num1;
-                }else if(num2 <= num1 && num2 <= num3){
-                    menor = num2;
-                }else if(num3 <= num1 && num3 <= num2){
-                    menor = num3;
-                }
-
-                //document.write("El numero menor es: " + menor);
-                document.getElementById('numMenorTl').innerHTML = 'El numero menor es: ' + menor + '<br>';
-            }
-        </script>
-
-        <form name="operaciones">
-            <p>Problema 1. Elaborar una función a la cual le enviemos tres enteros y muestre el menor.</p>
+    <body>        
+        <form name="numMenor">
+            <h3>Elaborar una función a la cual le enviemos tres enteros y muestre el menor.</h3>
             <p>Numero 1: <input type="text" name="numero1"></p>
             <p>Numero 2: <input type="text" name="numero2"></p>
             <p>Numero 3: <input type="text" name="numero3"></p>
-            <input type="button" name="numMenorBtn" value='Calcular Menor' onclick="numMenor()">
-            <p id="numMenorTl"></p>
+            <input type="button" name="button" value='Calcular Menor' onclick="calculaMenor()">
+            <p id="resNumMenor"></p>
+        </form>
 
-            
+        <form name="menorMayor">
+            <h3>Diseñar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.</h3>
+            <p>Numero 1: <input type="text" name="numero1"></p>
+            <p>Numero 2: <input type="text" name="numero2"></p>
+            <p>Numero 3: <input type="text" name="numero3"></p>
+            <input type="button" name="button" value='Ordenar' onclick="ordenaMenorMayor()">
+            <p id="resMenorMayor"></p>
+        </form>
+
+        <form name="perimetro">
+            <h3>Diseñar una función a la cual le envíe el valor del lado de un cuadrado y retorne
+                su perímetro.</h3>
+            <p>Ingrese el lado del cuadrado: <input type="text" name="lado"></p>
+            <input type="button" name="button" value='Calcular perimetro' onclick="mostarPerimetro()">
+            <p id="resPerimetro"></p>
+        </form>
+
+        <form name="promedio">
+            <h3>Elaborar una función que reciba tres enteros y retorne el promedio.</h3>
+            <p>Numero 1: <input type="text" name="numero1"></p>
+            <p>Numero 2: <input type="text" name="numero2"></p>
+            <p>Numero 3: <input type="text" name="numero3"></p>
+            <input type="button" name="button" value='Calcular Promedio' onclick="mostarPromedio()">
+            <p id="resPromedio"></p>
         </form>
     </body>
 </html>
