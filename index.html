@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Problema 1.</title>
+        <title>3.3 Estructuras de control</title>
         <script language="javascript" src="funciones.js"></script>
     </head>
 
     <body>        
         <form name="numMenor">
-            <h3>Elaborar una función a la cual le enviemos tres enteros y muestre el menor.</h3>
+            <h4>Problema 1. Elaborar una función a la cual le enviemos tres enteros y muestre el menor.</h4>
             <p>Numero 1: <input type="text" name="numero1"></p>
             <p>Numero 2: <input type="text" name="numero2"></p>
             <p>Numero 3: <input type="text" name="numero3"></p>
@@ -16,7 +16,8 @@
         </form>
 
         <form name="menorMayor">
-            <h3>Diseñar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.</h3>
+            <h4>Problema 2. Diseñar una función a la cual le envíe tres enteros y 
+                los muestre ordenados de menor a mayor.</h4>
             <p>Numero 1: <input type="text" name="numero1"></p>
             <p>Numero 2: <input type="text" name="numero2"></p>
             <p>Numero 3: <input type="text" name="numero3"></p>
@@ -25,20 +26,35 @@
         </form>
 
         <form name="perimetro">
-            <h3>Diseñar una función a la cual le envíe el valor del lado de un cuadrado y retorne
-                su perímetro.</h3>
+            <h4>Problema 3. Diseñar una función a la cual le envíe el valor del lado 
+                de un cuadrado y retorne su perímetro.</h4>
             <p>Ingrese el lado del cuadrado: <input type="text" name="lado"></p>
             <input type="button" name="button" value='Calcular perimetro' onclick="mostarPerimetro()">
             <p id="resPerimetro"></p>
         </form>
 
+        <form name="numDigitos">
+            <h4>Problema 4. Desarrollar una función que retorne la cantidad de dígitos 
+                que tiene una variable entera positiva.</h4>
+            <p>Numero 1: <input type="text" name="numero1"></p>
+            <input type="button" name="button" value='Calcular Digitos' onclick="mostarNumDigitos()">
+            <p id="resNumDigitos"></p>
+        </form>
+
         <form name="promedio">
-            <h3>Elaborar una función que reciba tres enteros y retorne el promedio.</h3>
+            <h4>Problema 5. Elaborar una función que reciba tres enteros y retorne el promedio.</h4>
             <p>Numero 1: <input type="text" name="numero1"></p>
             <p>Numero 2: <input type="text" name="numero2"></p>
             <p>Numero 3: <input type="text" name="numero3"></p>
             <input type="button" name="button" value='Calcular Promedio' onclick="mostarPromedio()">
             <p id="resPromedio"></p>
+        </form>
+
+        <form name="suma5val">
+            <h4>Problema 6. Diseñar una función que solicite la carga de 5 valores 
+                por teclado y retorne su suma.</h4>
+            <input type="button" name="button" value='Sumar valores' onclick="mostrarSumaVal()">
+            <p id="resSumaVal"></p>
         </form>
     </body>
 </html>

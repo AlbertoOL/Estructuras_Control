@@ -38,6 +38,16 @@ function mostarPerimetro(){
     document.getElementById('resPerimetro').innerHTML = 'El perimetro del cuadrado es: <b>' + dato + '</b><br>';
 }
 
+function calculaNumDigitos(){
+    var num1 = document.numDigitos.numero1.value;
+    return num1.length;
+}
+
+function mostarNumDigitos(){
+    var dato = calculaNumDigitos();
+    document.getElementById('resNumDigitos').innerHTML = 'La cantidad de dígitos que tiene una variable es: <b>' + dato + '</b><br>';
+}
+
 function calculaPromedio() {
     var num1 = parseInt(document.promedio.numero1.value);
     var num2 = parseInt(document.promedio.numero2.value);
@@ -52,3 +62,18 @@ function mostarPromedio(){
     document.getElementById('resPromedio').innerHTML = 'El promedio de los tres numeros es: <b>' + dato + '</b><br>';
 }
 
+function sumaValores(){
+    var valor1 = parseInt(prompt('Ingrese el primer valor: ',''));
+    var valor2 = parseInt(prompt('Ingrese el segundo valor: ', ''));
+    var valor3 = parseInt(prompt('Ingrese el tercer valor: ', ''));
+    var valor4 = parseInt(prompt('Ingrese el cuarto valor: ', ''));
+    var valor5 = parseInt(prompt('Ingrese el quinto valor: ', ''));
+
+    suma = valor1 + valor2 + valor3 + valor4 + valor5;
+    return suma;
+}
+
+function mostrarSumaVal(){
+    var dato = sumaValores();
+    document.getElementById('resSumaVal').innerHTML = 'La suma de los 5 valores es: <b>' + dato + '</b><br>';
+}
